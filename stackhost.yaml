@@ -9,8 +9,8 @@ commands:
     - "pip install -r requirements.txt"
   package:
     - "nano inxi"
-  start:
-    - "python3 bot.py"
+  start: 
+    - python bot.py
 
 env:
   - "ENVIRONMENT=production"
