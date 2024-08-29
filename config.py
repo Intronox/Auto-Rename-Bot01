@@ -9,14 +9,14 @@ class Config(object):
 
     # database config
     DB_NAME = os.environ.get("DB_AutoRename","Animes_Station")     
-    DB_URL  = os.environ.get("https://t.me/+uLMR6Uf2oT9lMmRl","")
+    DB_URL  = os.environ.get("o6ovc3q.mongodb.net/?retryWrites=true&w=majority&appName=Clusters00909","")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/4b306f4b15c23a8f22e58.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002238791949"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
